@@ -18,8 +18,8 @@
   "module": "./dist/component-library-react.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/component-library-react.js",
+      "require": "./dist/component-library-react.umd.js"
     }
   },
   "publishConfig": {
