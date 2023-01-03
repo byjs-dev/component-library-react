@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/byjs-dev/component-library-react/compare/v1.1.1...v1.1.2) (2023-01-03)
+
+
+### Bug Fixes
+
+* **ci:** trigger release with changed settings ([8b8ac61](https://github.com/byjs-dev/component-library-react/commit/8b8ac61c4d758b6e3a7c324e3e48195173b95396))
+
 ## [1.1.1](https://github.com/byjs-dev/component-library-react/compare/v1.1.0...v1.1.1) (2023-01-03)
 
 
