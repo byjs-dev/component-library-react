@@ -1,3 +1,3 @@
 export default function Button() {
-    return (<button>I SHOULD BE HERE</button>)
+    return (<button>I'm a button</button>)
 }
