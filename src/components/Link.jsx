@@ -1,3 +1,3 @@
-export default function Link({href}) {
-    return (<a href={href}>I MUST NOT BE HERE</a>)
+export default function Link({href, text}) {
+    return (<a href={href}>{text}</a>)
 }
