@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/byjs-dev/component-library-react/compare/v1.1.2...v1.1.3) (2023-01-03)
+
+
+### Bug Fixes
+
+* **package-json:** edit exports values ([f5ead3b](https://github.com/byjs-dev/component-library-react/commit/f5ead3b43069bd4b40c3f6b6901876cc22f3231a))
+
 ## [1.1.2](https://github.com/byjs-dev/component-library-react/compare/v1.1.1...v1.1.2) (2023-01-03)
 
 
