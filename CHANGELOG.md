@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/byjs-dev/component-library-react/compare/v1.1.3...v1.2.0) (2023-01-04)
+
+
+### Features
+
+* **CustomRadioGroup:** add headlessui RadioGroup component to try different bundling options ([bb02366](https://github.com/byjs-dev/component-library-react/commit/bb023662236bc127ad18864b330c065bca31b411))
+
 ## [1.1.3](https://github.com/byjs-dev/component-library-react/compare/v1.1.2...v1.1.3) (2023-01-03)
 
 
