@@ -18,7 +18,7 @@ export default defineConfig({
       fileName: 'index'
     },
     rollupOptions: {
-      external: [...Object.keys(peerDependencies), ...Object.keys(dependencies)],
+      external: [...Object.keys(peerDependencies)],
       output: {
         globals: {
           react: 'React'
