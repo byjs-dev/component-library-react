@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/byjs-dev/component-library-react/compare/v1.2.1...v1.2.2) (2023-01-05)
+
+
+### Bug Fixes
+
+* **ci:** update actions to newer node version and trigger release to test sync workflow ([52f4291](https://github.com/byjs-dev/component-library-react/commit/52f429155d5cba8fa3b2e7e51b51575d4e9b363e))
+
 ## [1.2.1](https://github.com/byjs-dev/component-library-react/compare/v1.2.0...v1.2.1) (2023-01-05)
 
 
