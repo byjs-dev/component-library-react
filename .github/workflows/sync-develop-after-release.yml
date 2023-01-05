@@ -1,17 +1,16 @@
 name: Sync develop after release
 on:
   release:
-    types:
-      - published
+    types: [released]
   workflow_dispatch:
-  
+
 jobs:
   sync:
     name: Sync
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Merge main -> develop
