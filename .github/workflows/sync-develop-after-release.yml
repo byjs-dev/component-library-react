@@ -1,6 +1,6 @@
 name: Sync develop after release
 on:
-  registry_package:
+  release:
     types: [published]
 
 jobs:
