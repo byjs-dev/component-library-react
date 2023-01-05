@@ -25,13 +25,16 @@ Run ```npm run build``` to manually create the library files into the /dist fold
 A new library version as Github NPM Package will only be released by the CI pipeline if a pull request on main, with relevant code changes, has been merged.
 
 ## TODO
-* create workflow to merge changes done by semantic-release-bot back into develop branch
 * add storybook v7 
   * configure tailwind usage
   * add testing
     * test runner 
     * a11y
     * playwright e2e (check visual/snapshot tests)
+* edit workflows:
+    * add testing
+    * ?(pre-release workflow : package-pre-release + add storybook staging/pre-release deployment to gh-pages)
+    * add storybook production deployment to gh-pages 
 * cleanup dev -> remove App.jsx etc., after storybook is running
 * cleanup current components
 * check tailwind custom theming/config regarding design tokens
