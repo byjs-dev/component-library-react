@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
-import { peerDependencies, dependencies } from './package.json'
+import { peerDependencies } from './package.json'
 import react from '@vitejs/plugin-react'
 
 
