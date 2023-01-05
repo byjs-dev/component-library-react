@@ -1,8 +1,7 @@
 name: Sync develop after release
 on:
-  release:
-    types:
-      - published
+  workfow_dispatch
+  
 jobs:
   sync:
     name: Sync
