@@ -1,0 +1,21 @@
+name: Sync develop after release
+on:
+  release:
+    types:
+      - published
+jobs:
+  sync:
+    name: Sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Merge main -> develop
+        run: |
+          git fetch origin
+          git checkout develop
+          git merge origin/main --ff --message "chore: merge changes in main back into develop [skip ci]"
+          git push
+
