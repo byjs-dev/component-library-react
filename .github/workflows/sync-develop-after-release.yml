@@ -1,6 +1,6 @@
 name: Sync develop after release
 on:
-  workfow_dispatch
+  workflow_dispatch
   
 jobs:
   sync:
