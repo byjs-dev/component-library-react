@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/byjs-dev/component-library-react/compare/v1.2.6...v1.3.0) (2023-01-05)
+
+
+### Features
+
+* **header-component:** try packaging storybook component for usage ([774f971](https://github.com/byjs-dev/component-library-react/commit/774f971ba3a7265df08f7316507d7e9b59f52ea7))
+
 ## [1.2.6](https://github.com/byjs-dev/component-library-react/compare/v1.2.5...v1.2.6) (2023-01-05)
 
 
