@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/byjs-dev/component-library-react/compare/v1.2.5...v1.2.6) (2023-01-05)
+
+
+### Bug Fixes
+
+* **ci:** moved sync workflow to jobtrigger release to test sync job ([c1ed93d](https://github.com/byjs-dev/component-library-react/commit/c1ed93d470a4b2723b1496f1192494b085097150))
+
 ## [1.2.5](https://github.com/byjs-dev/component-library-react/compare/v1.2.4...v1.2.5) (2023-01-05)
 
 
