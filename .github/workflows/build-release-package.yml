@@ -1,11 +1,13 @@
-name: Build & Release Package
+name: Build, Release & Sync
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
 jobs:
-  release:
-    name: Release
+  build_and_release:
+    name: Build & Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,10 +21,25 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Build
+      - name: Build Library
         run: npm run build
-      - name: Release
+      - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
+  sync_branches:
+    name: Sync Branches
+    needs: build_and_release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Merge main -> develop
+        run: |
+          git fetch origin
+          git checkout develop
+          git merge origin/main --ff --message "chore: merge changes in main back into develop [skip ci]"
+          git push
