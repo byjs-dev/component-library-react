@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/byjs-dev/component-library-react/compare/v1.2.4...v1.2.5) (2023-01-05)
+
+
+### Bug Fixes
+
+* **fake:** trigger release to test edited sync workflow ([5eed123](https://github.com/byjs-dev/component-library-react/commit/5eed123fc53b61c80f10af9dd50adbc19d1e08f8))
+
 ## [1.2.4](https://github.com/byjs-dev/component-library-react/compare/v1.2.3...v1.2.4) (2023-01-05)
 
 
