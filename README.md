@@ -12,7 +12,7 @@ This my personal playground for building a react component library with Vite v4 
 Make sure to use the correct Node and NPM versions, as shown in package.json "engines".
 If you use nvm, just run ```nvm use``` inside this project's root directory.
 
-### Install
+### Install dependencies
 Run ```npm install```
 
 ### Develop
@@ -25,8 +25,16 @@ Run ```npm run build``` to manually create the library files into the /dist fold
 A new library version as Github NPM Package will only be released by the CI pipeline if a pull request on main, with relevant code changes, has been merged.
 
 ## TODO
-* add storybook v7 
-  * configure tailwind usage
+* fonts
+  * build fonts (charsets, faces etc) 
+  * add fonts
+  * usage -> css / tailwind config
+  * add to library assets -> npm package
+* configure storybook v7
+  * cleanup examples
+  * add intro
+  * add first component
+  * add theming
   * add testing
     * test runner 
     * a11y
@@ -37,4 +45,4 @@ A new library version as Github NPM Package will only be released by the CI pipe
     * add storybook production deployment to gh-pages 
 * cleanup dev -> remove App.jsx etc., after storybook is running
 * cleanup current components
-* check tailwind custom theming/config regarding design tokens
+* check tailwind custom theming/config regarding design tokens + add to lib package
