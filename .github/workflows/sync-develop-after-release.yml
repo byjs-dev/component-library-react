@@ -1,7 +1,7 @@
 name: Sync develop after release
 on:
-  release:
-    types: [released]
+  registry_package:
+    types: [published]
   workflow_dispatch:
 
 jobs:
