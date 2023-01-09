@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/byjs-dev/component-library-react/compare/v1.3.0...v1.3.1) (2023-01-09)
+
+
+### Bug Fixes
+
+* **styles:** change style paths, try local fonts ([c1c4e11](https://github.com/byjs-dev/component-library-react/commit/c1c4e119b4ce5d68a9c1005b3bbba364fb0bfd1d))
+
 # [1.3.0](https://github.com/byjs-dev/component-library-react/compare/v1.2.6...v1.3.0) (2023-01-05)
 
 
