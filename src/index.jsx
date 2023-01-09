@@ -1,8 +1,7 @@
-import 'tailwindcss/tailwind.css';
+import './index.css';
 
-import Button from './components/Button.jsx';
 import Link from './components/Link.jsx';
 import CustomRadioGroup from './components/CustomRadioGroup.jsx';
-import {Header} from './stories/Header.jsx';
+import {Button} from './stories/Button.jsx';
 
-export {Button, Link, CustomRadioGroup, Header};
+export {Button, Link, CustomRadioGroup};
