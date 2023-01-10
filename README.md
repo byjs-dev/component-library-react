@@ -26,10 +26,7 @@ A new library version as Github NPM Package will only be released by the CI pipe
 
 ## TODO
 * fonts
-  * build fonts (charsets, faces etc) 
-  * add fonts
   * usage -> css / tailwind config
-  * add to library assets -> npm package
 * configure storybook v7
   * cleanup examples
   * add intro
@@ -42,7 +39,6 @@ A new library version as Github NPM Package will only be released by the CI pipe
 * edit workflows:
     * add testing
     * ?(pre-release workflow : package-pre-release + add storybook staging/pre-release deployment to gh-pages)
-    * add storybook production deployment to gh-pages 
-* cleanup dev -> remove App.jsx etc., after storybook is running
+    * add storybook production deployment to gh-pages
 * cleanup current components
 * check tailwind custom theming/config regarding design tokens + add to lib package
