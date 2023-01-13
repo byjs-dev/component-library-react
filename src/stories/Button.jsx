@@ -5,33 +5,36 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({ tag, label, variant,...props }) => {
+
+  const style = '';
+
+  if(tag === 'input'){
+    return (<input value={label} {...props}/>);
+  }
+  if(tag === 'a'){
+    return (<a {...props} >{label}</a>);
+  }
   return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={backgroundColor && { backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+      <button className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded`} {...props}>
+        {label}
+      </button>
   );
 };
 
 Button.propTypes = {
   /**
-   * Is this the principal call to action on the page?
+   * The HTML Element to be rendered
    */
-  primary: PropTypes.bool,
+  tag: PropTypes.oneOf(['button', 'input', 'a']),
   /**
-   * What background color to use
+   * Button variant
    */
-  backgroundColor: PropTypes.string,
+  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
   /**
-   * How large should the button be?
+   * Optional theme (overrides outer/global theme)
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  theme: PropTypes.oneOf(['cat', 'rental', 'zeppelin', 'neutral']),
   /**
    * Button contents
    */
@@ -43,8 +46,10 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
+  tag: "button",
+  variant: "primary",
+  theme: undefined,
+  label: 'Button',
+  type: null,
   onClick: undefined,
 };
