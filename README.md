@@ -28,9 +28,7 @@ A new library version as Github NPM Package will only be released by the CI pipe
 * fonts
   * usage -> css / tailwind config
 * configure storybook v7
-  * cleanup examples
   * add intro
-  * add first component
   * add theming
   * add testing
     * test runner 
