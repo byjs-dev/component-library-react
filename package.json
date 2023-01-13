@@ -13,6 +13,7 @@
   },
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -29,7 +30,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "run-p build:*",
+    "build:scripts": "vite build",
+    "build:types": "tsc --emitDeclarationOnly && tsc-alias",
     "preview": "vite preview",
     "publish:check": "npx semantic-release --branch main --no-ci --dry-run",
     "storybook": "storybook dev -p 6006",
@@ -45,15 +48,14 @@
     "@storybook/addon-interactions": "^7.0.0-beta.25",
     "@storybook/addon-links": "^7.0.0-beta.25",
     "@storybook/blocks": "^7.0.0-beta.25",
-    "@storybook/manager-api": "^7.0.0-beta.25",
     "@storybook/react": "^7.0.0-beta.25",
     "@storybook/react-vite": "^7.0.0-beta.25",
     "@storybook/testing-library": "^0.0.13",
-    "@storybook/theming": "^7.0.0-beta.25",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.0.1",
     "autoprefixer": "^10.4.13",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.21",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -61,6 +63,8 @@
     "semantic-release": "^20.0.2",
     "storybook": "^7.0.0-beta.25",
     "tailwindcss": "^3.2.4",
+    "tsc-alias": "^1.8.2",
+    "typescript": "^4.9.4",
     "vite": "^4.0.4"
   },
   "peerDependencies": {
