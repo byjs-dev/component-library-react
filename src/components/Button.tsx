@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from "clsx";
 
 
-export interface ButtonProps {
+type ButtonProps = {
     /**
      * What variant to use
      */
