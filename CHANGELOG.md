@@ -1,3 +1,18 @@
+# [1.4.0](https://github.com/byjs-dev/component-library-react/compare/v1.3.1...v1.4.0) (2023-01-16)
+
+
+### Bug Fixes
+
+* **button:** declare ButtonProps as type not interface ([14df56d](https://github.com/byjs-dev/component-library-react/commit/14df56d356fb58c7b0a9a6a9fbfbda9b233dec76))
+* **button:** export ButtonProps ([d82fa95](https://github.com/byjs-dev/component-library-react/commit/d82fa959675d290d95975d414638dabeb75b2917))
+* **button:** redo type declaration, add export and import it in story ([5ba75cb](https://github.com/byjs-dev/component-library-react/commit/5ba75cbfb739949e87bf8ab8432d9a1e9eb9674b))
+
+
+### Features
+
+* **button:** create component ([bddc204](https://github.com/byjs-dev/component-library-react/commit/bddc204eb203943e3eb9a2ff20a66f03680ff87b))
+* **button:** delete example, add custom style and behaviour ([6336e8a](https://github.com/byjs-dev/component-library-react/commit/6336e8a86baa0870831605b188f9daf054235312))
+
 ## [1.3.1](https://github.com/byjs-dev/component-library-react/compare/v1.3.0...v1.3.1) (2023-01-09)
 
 
