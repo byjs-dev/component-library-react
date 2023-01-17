@@ -38,10 +38,14 @@ export const Button = ({
 
                 //variant styles
                 variant === 'primary'
-                    ? 'bg-indigo-800 text-white'
+                    ? 'bg-indigo-800 text-white hover:bg-neutral-900'
 
                 : variant === 'secondary'
-                    ? 'bg-white text-indigo-800 ring-2 ring-indigo-800 ring-inset'
+                    ? 'bg-white text-indigo-800 ring-2 ring-indigo-800 ring-inset hover:bg-neutral-900 hover:text-white'
+
+                : variant === 'tertiary'
+                    ? 'bg-white text-indigo-800 hover:bg-gray-200'
+
                 : ''
             )}
             {...props}

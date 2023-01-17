@@ -33,6 +33,7 @@ export const Secondary: Story = {
 
 export const Tertiary: Story = {
   args: {
+    variant: 'tertiary',
     label: 'Button',
   },
 };
