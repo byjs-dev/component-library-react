@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button, ButtonProps } from './Button';
+import { Button } from './Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 const meta = {
@@ -26,11 +26,12 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
+    variant: 'secondary',
     label: 'Button',
   },
 };
 
-export const Large: Story = {
+export const Tertiary: Story = {
   args: {
     label: 'Button',
   },

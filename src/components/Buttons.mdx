@@ -1,0 +1,23 @@
+import { Meta } from '@storybook/blocks';
+import { Button } from '@/components/Button';
+
+<Meta title="Components/Button/Overview" />
+
+<style>
+  {`
+    .button-list {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 10px;
+    }
+  `}
+</style>
+
+# Button overview
+
+Meh:
+
+<div className="button-list">
+    <Button variant={`primary`} label={`Primary`} />
+    <Button variant={`secondary`} label={`Secondary`} />
+</div>

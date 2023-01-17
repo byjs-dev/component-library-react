@@ -30,20 +30,18 @@ export const Button = ({
                            label,
                            ...props
                        }: ButtonProps) => {
-    const variantStyle: string  = '';
-    const themeStyle: string  = '';
     return (
         <button
             className={clsx(
                 //base styles
-                'rounded focus:ring focus:ring-3 focus:ring-offset-1 focus:ring-blue-500',
+                'border-none font-medium text-lg rounded focus:ring focus:ring-3 focus:ring-offset-1 focus:ring-blue-500 px-4 py-2',
 
                 //variant styles
                 variant === 'primary'
                     ? 'bg-indigo-800 text-white'
 
                 : variant === 'secondary'
-                    ? 'bg-white text-indigo-800 border-indigo-800 border-2'
+                    ? 'bg-white text-indigo-800 ring-2 ring-indigo-800 ring-inset'
                 : ''
             )}
             {...props}
