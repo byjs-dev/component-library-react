@@ -1,6 +1,5 @@
 import React from 'react';
-import clsx from "clsx";
-
+import clsx from 'clsx';
 
 export interface ButtonProps {
     /**
@@ -24,32 +23,23 @@ export interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
-                           variant = 'primary',
-                           theme,
-                           label,
-                           ...props
-                       }: ButtonProps) => {
+export const Button = ({ variant = 'primary', theme, label, ...props }: ButtonProps) => {
     return (
         <button
             className={clsx(
                 //base styles
-                'border-none font-medium text-lg rounded focus:ring focus:ring-3 focus:ring-offset-1 focus:ring-blue-500 px-4 py-2',
+                'focus:ring-3 rounded border-none px-4 py-2 text-lg font-medium focus:ring focus:ring-blue-500 focus:ring-offset-1',
 
                 //variant styles
                 variant === 'primary'
                     ? 'bg-indigo-800 text-white hover:bg-neutral-900'
-
-                : variant === 'secondary'
-                    ? 'bg-white text-indigo-800 ring-2 ring-indigo-800 ring-inset hover:bg-neutral-900 hover:text-white'
-
-                : variant === 'tertiary'
+                    : variant === 'secondary'
+                    ? 'bg-white text-indigo-800 ring-2 ring-inset ring-indigo-800 hover:bg-neutral-900 hover:text-white'
+                    : variant === 'tertiary'
                     ? 'bg-white text-indigo-800 hover:bg-gray-200'
-
-                : ''
+                    : ''
             )}
-            {...props}
-        >
+            {...props}>
             {label}
         </button>
     );

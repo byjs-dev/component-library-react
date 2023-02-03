@@ -35,6 +35,7 @@
     "build:types": "tsc --emitDeclarationOnly && tsc-alias",
     "preview": "vite preview",
     "publish:check": "npx semantic-release --branch main --no-ci --dry-run",
+    "prettier": "prettier --write ./src/components/**/*.{ts,tsx}",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -59,7 +60,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
-    "prettier-plugin-tailwind": "^2.2.12",
+    "prettier-plugin-tailwindcss": "^0.2.2",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
