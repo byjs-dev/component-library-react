@@ -14,7 +14,7 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "jsx": "react-jsxdev",
-        "outDir": "dist",
+        "outDir": "lib",
         "declaration": true,
         "declarationMap": true,
         "baseUrl": ".",
