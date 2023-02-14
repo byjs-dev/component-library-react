@@ -19,7 +19,7 @@
       "import": "./lib/index.js",
       "require": "./lib/index.umd.js"
     },
-    "./dist/style.css": "./lib/style.css"
+    "./lib/style.css": "./lib/style.css"
   },
   "sideEffects": false,
   "files": [
