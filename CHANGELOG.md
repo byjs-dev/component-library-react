@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/byjs-dev/component-library-react/compare/v1.4.0...v1.5.0) (2023-02-14)
+
+
+### Bug Fixes
+
+* **button:** add font-family ([3cb3f3e](https://github.com/byjs-dev/component-library-react/commit/3cb3f3ee421f3641fb509a2b5aa787717695016f))
+
+
+### Features
+
+* **button:** add more styles, try overview mdx ([83d401f](https://github.com/byjs-dev/component-library-react/commit/83d401fe5a206fa9b4737d12a12aec2d42a498cd))
+* **button:** try overview mdx ([e34aa8b](https://github.com/byjs-dev/component-library-react/commit/e34aa8bc95d31c90c4050e967b3832e829647303))
+
 # [1.4.0](https://github.com/byjs-dev/component-library-react/compare/v1.3.1...v1.4.0) (2023-01-16)
 
 
