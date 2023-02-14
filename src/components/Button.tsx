@@ -26,6 +26,7 @@ export interface ButtonProps {
 export const Button = ({ variant = 'primary', theme, label, ...props }: ButtonProps) => {
     return (
         <button
+            style={{fontFamily: 'Roboto'}}
             className={clsx(
                 //base styles
                 'focus:ring-3 rounded border-none px-4 py-2 text-lg font-medium focus:ring focus:ring-blue-500 focus:ring-offset-1',
