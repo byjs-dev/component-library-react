@@ -1,3 +1,4 @@
+import './fonts.css';
 import './index.css';
 
-export * as SwipeBar from '@/components/swipebar'
+export * as Button from '@/components/Button'

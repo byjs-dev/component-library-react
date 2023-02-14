@@ -1,6 +1,5 @@
 import React from 'react';
-import clsx from "clsx";
-
+import clsx from 'clsx';
 
 export interface ButtonProps {
     /**
@@ -24,30 +23,24 @@ export interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
-                           variant = 'primary',
-                           theme,
-                           label,
-                           ...props
-                       }: ButtonProps) => {
-    const variantStyle: string  = '';
-    const themeStyle: string  = '';
+export const Button = ({ variant = 'primary', theme, label, ...props }: ButtonProps) => {
     return (
         <button
+            style={{fontFamily: 'Roboto'}}
             className={clsx(
                 //base styles
-                'rounded focus:ring focus:ring-3 focus:ring-offset-1 focus:ring-blue-500',
+                'focus:ring-3 rounded border-none px-4 py-2 text-lg font-medium focus:ring focus:ring-blue-500 focus:ring-offset-1',
 
                 //variant styles
                 variant === 'primary'
-                    ? 'bg-indigo-800 text-white'
-
-                : variant === 'secondary'
-                    ? 'bg-white text-indigo-800 border-indigo-800 border-2'
-                : ''
+                    ? 'bg-indigo-800 text-white hover:bg-neutral-900'
+                    : variant === 'secondary'
+                    ? 'bg-white text-indigo-800 ring-2 ring-inset ring-indigo-800 hover:bg-neutral-900 hover:text-white'
+                    : variant === 'tertiary'
+                    ? 'bg-white text-indigo-800 hover:bg-gray-200'
+                    : ''
             )}
-            {...props}
-        >
+            {...props}>
             {label}
         </button>
     );
