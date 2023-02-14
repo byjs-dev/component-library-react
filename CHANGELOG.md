@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/byjs-dev/component-library-react/compare/v1.5.0...v1.5.1) (2023-02-14)
+
+
+### Bug Fixes
+
+* **build:** export styles ([f8583ba](https://github.com/byjs-dev/component-library-react/commit/f8583ba9b75044adfd7bdaa644a0b71a0d4b40e4))
+
 # [1.5.0](https://github.com/byjs-dev/component-library-react/compare/v1.4.0...v1.5.0) (2023-02-14)
 
 
